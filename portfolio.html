@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -333,31 +334,26 @@
             </li>
           </ul>
         </div>
-        <div class="footer-input">
-          <div class="footer-email">
-            <label class="form-label" for="person-email"
-              ><p class="footer-soc-text">Підпишіться на розсилку</p></label
-            >
-            <div class="form-control">
-              <input
+        <label class="footer-label" for="footer-email">
+          <div class="footer-input">
+          <p class="footer-soc-text">Підпишіться на розсилку</p>
+          <form class="footer-form" action="">
+              <label for="footer-email"><input
                 class="form-footerinput"
-                id="person-email"
+                id="footer-email"
                 type="email"
-                value="Email"
-                name="person-email"
-              />
-            </div>
-          </div>
-          <div class="footer-inputbutt">
+                placeholder="Email"
+                name="footer-email"
+              /></label>           
+             </label>
             <button class="submit-button footer-button" type="submit">
               Підписатися
-              <svg class="send-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
             </button>
-          </div>
+          </form>
         </div>
-      </div>
     </footer>
   </body>
 </html>
